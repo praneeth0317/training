@@ -1,3 +1,4 @@
-print(float("10"))
-print(float("100.5"))
-print(float(False))
+
+print("javascript",end="\t")
+print("python")
+print("java")
