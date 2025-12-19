@@ -48,8 +48,19 @@ result = lambda a,b:f"a vaue {a} is largest number" if a > b else f"b value {b} 
 print(result(5,10))
 # map is used apply some functions to each and every elements in sequence
 # map(function,sequence)
+l = [5,10,15,20]
 r = [];
-for i in 1:
+for i in l:
     r.append(i*5)
-print(1,r)
-result = map(lambda x:x)
+print(l,r)
+result = list(map(lambda x:x*5,l))
+print(result)
+# filter is used to filter sequence elements based on conditions filter(functions,sequence)
+even = list(filter(lambda x:x%2 == 0,1))
+print(even)
+# to reduce we have to use modules
+# import functions 
+from functools import reduce
+l = [5,10,15]
+sum = reduce(lambda x,y:x+y,l)
+print(sum)
